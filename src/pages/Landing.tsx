@@ -85,7 +85,7 @@ export function Landing(): JSX.Element {
                 onClick={handleTryDemo}
                 className="px-8 py-4 bg-vibe-mint hover:bg-vibe-mintLight text-obsidian font-bold rounded-xl text-lg"
               >
-                Try Free Demo
+                Try Free Demo Now!
               </button>
               <button
                 onClick={() => setShowAuth(true)}

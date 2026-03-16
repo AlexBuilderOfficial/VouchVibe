@@ -1,15 +1,16 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { Dashboard } from './pages/Dashboard';
 import { CampaignForm } from './pages/CampaignForm';
 import { PublicCampaign } from './pages/PublicCampaign';
+import { Landing } from './pages/Landing';
 import { PricingPage } from './pages/PricingPage';
 import { CollectPage } from './pages/CollectPage';
 
 export function AppRoutes(): JSX.Element {
   return (
     <Routes>
-      <Route path="/" element={<Navigate to="/c/product-feedback" replace />} />
+      <Route path="/" element={<Landing />} />
       <Route path="/pricing" element={<PricingPage />} />
       
       {/* Public campaign pages */}
